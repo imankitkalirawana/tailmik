@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <>
@@ -15,12 +17,12 @@ const Home = () => {
             software.
           </h2>
           <div className="mt-14 flex flex-col mr-auto">
-            <a
-              href="https://www.divinelydeveloper.me"
+            <Link
+              to="/register"
               className="bg-black dark:bg-white dark:text-black rounded-full px-11 py-6 text-lg max-w-80 text-center font-medium"
             >
-              Know about me
-            </a>
+              Create an account
+            </Link>
             <a
               href="https://www.github.com/imankitkalirawana"
               className=" dark:text-white rounded-full px-11 py-6 font-medium text-lg mt-6 border-2 dark:border-slate-500 text-center transition-all hover:border-transparent max-w-80"

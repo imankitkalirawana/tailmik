@@ -213,7 +213,7 @@ const Register = () => {
                     type="submit"
                     disabled={!formik.isValid}
                     onClick={() => {
-                      document.getElementById("result")?.scrollIntoView();
+                      window.scrollTo(0, 0);
                     }}
                   >
                     Create an Account
