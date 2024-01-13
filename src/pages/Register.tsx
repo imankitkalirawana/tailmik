@@ -213,7 +213,9 @@ const Register = () => {
                     type="submit"
                     disabled={!formik.isValid}
                     onClick={() => {
-                      window.scrollTo(0, 0);
+                      // scroll to result
+                      const result = document.getElementById("result");
+                      result?.scrollIntoView({ behavior: "smooth" });
                     }}
                   >
                     Create an Account
@@ -229,45 +231,44 @@ const Register = () => {
             <img
               src="/skis_z5lkc3.webp"
               alt="banner"
-              className="h-auto w-full object-contain aspect-[4/3]"
+              className="hidden lg:block h-auto w-full object-contain aspect-[4/3]"
             />
             {/* form data result after submitting*/}
-            {formik.isSubmitting && (
-              <div
-                className="form-data bg-slate-800 p-8 mt-8 rounded-xl"
-                id="result"
-              >
-                <pre>
-                  <span>{"{"}</span>
-                  <br />
-                  <span className="ml-4 text-green-600">
-                    name:{" "}
-                    <span className="text-purple-600">
-                      {" "}
-                      {formik.values.name}
+            <div id="result">
+              {formik.isSubmitting && (
+                <div className="form-data bg-slate-800 p-8 mt-8 rounded-xl">
+                  <pre>
+                    <span>{"{"}</span>
+                    <br />
+                    <span className="ml-4 text-green-600">
+                      name:{" "}
+                      <span className="text-purple-600">
+                        {" "}
+                        {formik.values.name}
+                      </span>
                     </span>
-                  </span>
-                  <br />
-                  <span className="ml-4 text-green-600">
-                    email:
-                    <span className="text-purple-600">
-                      {" "}
-                      {formik.values.email}
+                    <br />
+                    <span className="ml-4 text-green-600">
+                      email:
+                      <span className="text-purple-600">
+                        {" "}
+                        {formik.values.email}
+                      </span>
                     </span>
-                  </span>
-                  <br />
-                  <span className="ml-4 text-green-600">
-                    username:
-                    <span className="text-purple-600">
-                      {" "}
-                      {formik.values.username}
+                    <br />
+                    <span className="ml-4 text-green-600">
+                      username:
+                      <span className="text-purple-600">
+                        {" "}
+                        {formik.values.username}
+                      </span>
                     </span>
-                  </span>
-                  <br />
-                  <span>{"}"}</span>
-                </pre>
-              </div>
-            )}
+                    <br />
+                    <span>{"}"}</span>
+                  </pre>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </header>
