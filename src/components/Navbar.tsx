@@ -5,14 +5,14 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <div className="px-20 py-9 lg:py-12">
+    <div className="px-10 md:px-20 py-9 lg:py-12">
       <nav className="mx-auto flex max-w-8xl items-center justify-between">
         <div className="flex justify-center gap4 align-middle">
           <Link
             to="/"
             className="block whitespace-nowrap text-2xl font-medium transition focus:outline-none"
           >
-            <h1>Divinely Developer</h1>
+            <h1>The Kody</h1>
           </Link>
         </div>
         <ul className="hidden lg:flex text-slate-400">
@@ -60,17 +60,7 @@ const Navbar = () => {
         </ul>
 
         <div className="flex justify-center align-center">
-          <div className="block lg:hidden">
-            <button className="inline-flex justify-center items-center h-14 w-14 rounded-full border-2 p-1 transition border-slate-400 text-slate-800 hover:border-slate-800 dark:text-slate-100 dark:hover:border-slate-100">
-              <i className="fa-solid fa-bars"></i>
-            </button>
-          </div>
-          <div className="hidden lg:block">
-            <button className="inline-flex justify-center items-center h-14 w-14 rounded-full border-2 p-1 transition border-slate-400 text-slate-800 hover:border-slate-800 dark:text-slate-100 dark:hover:border-slate-100">
-              <i className="fa-solid fa-computer-classic"></i>
-            </button>
-          </div>
-          <div className="hidden lg:block">
+          <div className="block">
             <Link
               to="/login"
               className="ml-4 inline-flex h-14 w-14 rounded-full justify-center items-center"

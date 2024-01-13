@@ -4,6 +4,7 @@ import Docs from "./pages/Docs";
 import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
@@ -11,33 +12,12 @@ export default function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route element={<h1>Home</h1>} path="/" />
-          <Route
-            element={
-              <>
-                <Docs /> <Footer />
-              </>
-            }
-            path="/docs"
-          />
-          <Route
-            element={
-              <>
-                <Login /> <Footer />
-              </>
-            }
-            path="/login"
-          />
-          <Route
-            element={
-              <>
-                <Register />
-                <Footer />
-              </>
-            }
-            path="/register"
-          />
+          <Route element={<Home />} path="/" />
+          <Route element={<Docs />} path="/docs" />
+          <Route element={<Login />} path="/login" />
+          <Route element={<Register />} path="/register" />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
