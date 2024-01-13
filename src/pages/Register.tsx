@@ -236,7 +236,7 @@ const Register = () => {
             {/* form data result after submitting*/}
             <div id="result">
               {formik.isSubmitting && (
-                <div className="form-data bg-slate-800 p-8 mt-8 rounded-xl">
+                <div className="form-data bg-slate-800 p-8 mt-8 rounded-xl overflow-x-scroll">
                   <pre>
                     <span>{"{"}</span>
                     <br />
