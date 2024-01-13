@@ -52,7 +52,7 @@ const Home = () => {
                 Bhuneshvar
               </p>
             </div>
-            <div className="col-span-full mt-12 lg:col-span-6 lg:col-start-6 lg:mt-0 text-center lg:text-start">
+            <div className="col-span-full mt-12 lg:col-span-6 lg:col-start-6 lg:mt-0 lg:text-start">
               <h2
                 className="leading-tight text-3xl md:text-4xl text-black dark:text-white"
                 id="intro"
@@ -79,15 +79,15 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="relative mx-10vw bg-slate-800 rounded-lg px-12 py-24 mt-80">
+        <div className="relative mx-10vw bg-slate-800 rounded-lg px-8 py-10 mt-80 md:py-25">
           <div className="grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl mt-10 items-center">
-            <div className="col-span-full lg:col-span-4 lg:col-start-1">
-              <p className="text-4xl">
+            <div className="col-span-full lg:col-span-4 lg:col-start-1 mb-8">
+              <p className="text-2xl md:text-4xl">
                 Having hard time looking for some Web Developer?
               </p>
             </div>
             <div className="col-span-full lg:col-span-4 lg:col-start-8">
-              <p className="text-4xl text-slate-400">
+              <p className="text-2xl md:text-4xl text-slate-400">
                 Well, You are at the right place. I'm here to help you with your
                 Web Development needs.
               </p>
